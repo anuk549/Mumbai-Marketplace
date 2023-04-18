@@ -19,7 +19,7 @@ const Home: NextPage = () => {
       <div className={styles.cardContainer}>
         {nfts && nfts.map((nft) => {
           return(
-            <div className={styles.card}>
+            <div key={nft.id} className={styles.card}>
               <MediaRenderer 
                 src={nft.asset.image}
                 height="200px"
