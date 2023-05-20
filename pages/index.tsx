@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 import { BigNumber } from "ethers";
 
 const Home: NextPage = () => {
-  const { contract } = useContract("0x128B0592D757221060e9676F3f99AeE93ff4fc1b", "marketplace")
+  const { contract } = useContract("", "marketplace")
 
   const { data: nfts, isLoading } = useActiveListings(contract);
 
